@@ -2,56 +2,98 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-       //Задача 1
-        var dog = 8.0;
-        var cat = 3.6;
-        var paper = 763789;
-        System.out.println( + dog);
-        System.out.println("cat = " + cat);
-        System.out.println("paper = " + paper);
+        //Задача 1
+        int a = 1000000;
+        byte b = 120;
+        short c = 32760;
+        long d = 12312321311L;
+        float w = 12.12f;
+        double t = 123123.123123;
+        System.out.println("Значение переменной a с типом int равно " + a);
+        System.out.println("Значение переменной b с типом byte равно " + b);
+        System.out.println("Значение переменной c с типом short равно " + c);
+        System.out.println("Значение переменной d с типом long равно " + d);
+        System.out.println("Значение переменной w с типом float равно " + w);
+        System.out.println("Значение переменной t с типом double равно " + t);
         // Задача 2
-        dog = dog + 2;
-        cat = cat + 2;
-        paper = paper + 2;
-        System.out.println("dog = " + dog);
-        System.out.println("cat = " + cat);
-        System.out.println("paper = " + paper);
+        byte b1 = 67;
+        short a1 = 27897;
+        short c1 = -159;
+        short d1 = 569;
+        float w1 = 2.786f;
+        long t1 = 987678965549L;
+        float s1 = 27.12f;
         // Задача 3
-        System.out.println("dog = " + (dog - 3.5));
-        System.out.println("cat = " + (cat - 1.6));
-        System.out.println("paper = " + (paper - 7639));
+        byte teacher1 = 23;
+        byte teacher2 = 27;
+        byte teacher3 = 30;
+        short papers = 480;
+        int totalStudents = teacher1 + teacher2 + teacher3;
+        int calculate = papers / totalStudents;
+        System.out.println("На каждого ученика рассчитано " + calculate + " листов бумаги");
         // Задача 4
-        var friend = 19;
-        System.out.println("friend = " + friend);
-        friend = friend + 2;
-        System.out.println("friend = " + friend);
-        friend = friend / 7;
-        System.out.println("friend = " + friend);
+        byte min2 = 16;
+        int min = min2 / 2;
+        int min20 = min * 20;
+        int hour = min * 60;
+        int day = hour * 24;
+        int day3 = day * 3;
+        int month = day * 30;
+        System.out.println("За 2 минуты машина произвела " + min2 + " штук бутылок");
+        System.out.println("За 20 минут машина произвела " + min20 + " штук бутылок");
+        System.out.println("За сутки машина произвела " + day + " штук бутылок");
+        System.out.println("За 3 дня машина произвела " + day3 + " штук бутылок");
+        System.out.println("За 1 месяц машина произвела " + month + " штук бутылок");
         // Задача 5
-        var frog = 3.5;
-        System.out.println("frog = " + frog);
-        frog = frog * 10;
-        System.out.println("frog = " + frog);
-        frog = frog / 3.5;
-        System.out.println("frog = " + frog);
-        frog = frog + 4;
-        System.out.println("frog = " + frog);
+        byte dye = 120;
+        byte white = 2;
+        byte brown = 4;
+        int schoolClass = dye / (white + brown);
+        int totalWhite = schoolClass * white;
+        int totalBrown = schoolClass * brown;
+        System.out.println("В школе, где " + schoolClass + " классов, нужно " + totalWhite + " банок белой краски и " + totalBrown + " банок коричневой краски");
         // Задача 6
-        var weight1 = 78.2;
-        var weight2 = 82.7;
-        var amount = weight1 + weight2;
-        var difference = weight2 - weight1;
-        System.out.println("amount = " + amount);
-        System.out.println("difference = " + difference);
+        byte bananaCaloric = 80;
+        byte eggCaloric = 70;
+        byte iceCreamCaloric = 100;
+        byte milkCaloric = 105;
+        byte banana = 5;
+        byte egg = 4;
+        byte iceCream = 2;
+        short milk = 200;
+        float milk1Caloric = milkCaloric / 100.0f;
+        int breakfastGram = (int) ((banana * bananaCaloric) + (egg * eggCaloric) + (iceCream * iceCreamCaloric) + (milk * milk1Caloric));
+        System.out.println("breakfastGram = " + breakfastGram +  " gram");
+        float breakfastKg = breakfastGram / 1000.0f;
+        System.out.println("breakfastKg = " + breakfastKg +  " kg");
         //Задача 7
-        var remnant =  weight2 % weight1;
-        System.out.println("remnant = " + remnant);
+        short diet1 = 250;
+        short diet2 = 500;
+        byte weight = 7;
+        short weightGram = (short) (weight * 1000);
+        byte result1 = (byte) (weightGram / diet1);
+        byte result2 = (byte) (weightGram / diet2);
+        System.out.println(result1 + " дней уйдет на похудение, если спортсмен будет терять каждый день по 250 грамм" );
+        System.out.println(result2 + " дней уйдет на похудение, если спортсмен будет терять каждый день по 500 грамм" );
+        byte average = (byte)((result1 + result2) / 2);
+        System.out.println(average + " может потребоваться дней в среднем, чтобы добиться результата похудения");
         //Задача 8
-        var watchesCompany = 640;
-        var workers = watchesCompany / 8;
-        System.out.println("Всего работников в компании " + workers +  " — человек");
-        workers = workers + 94;
-        watchesCompany = workers * 8;
-        System.out.println("Если в компании работает " + workers + " человека, то всего " + watchesCompany + " часов работы может быть поделено между сотрудниками");
-    }
-    }
+        int worker1 = 67760;
+        int worker2 = 83690;
+        int worker3 = 76230;
+        int  worker1up = (int)(worker1 * 1.1);
+        int  worker2up = (int)(worker2 * 1.1);
+        int  worker3up = (int)(worker3 * 1.1);
+        int worker1year = worker1 * 12;
+        int worker2year = worker2 * 12;
+        int worker3year = worker3 * 12;
+        int worker1upYear = worker1up * 12;
+        int worker2upYear = worker2up * 12;
+        int worker3upYear = worker3up * 12;
+        int differenceWorker1 = worker1upYear - worker1year;
+        int differenceWorker2 = worker2upYear - worker2year;
+        int differenceWorker3 = worker3upYear - worker3year;
+        System.out.println("Маша теперь получает " + worker1up + " рублей. Годовой доход вырос на " + differenceWorker1 + " рублей");
+        System.out.println("Денис теперь получает " + worker2up + " рублей. Годовой доход вырос на " + differenceWorker2 + " рублей");
+        System.out.println("Кристина теперь получает " + worker3up + " рублей. Годовой доход вырос на " + differenceWorker3 + " рублей");
+    }}
