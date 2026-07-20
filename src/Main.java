@@ -17,12 +17,12 @@ public class Main {
         System.out.println("Значение переменной t с типом double равно " + t);
         // Задача 2
         byte b1 = 67;
-        short a1 = 27897;
+        int a1 = 27897;
         short c1 = -159;
         short d1 = 569;
         float w1 = 2.786f;
         long t1 = 987678965549L;
-        float s1 = 27.12f;
+        double s1 = 27.12;
         // Задача 3
         byte teacher1 = 23;
         byte teacher2 = 27;
@@ -63,9 +63,9 @@ public class Main {
         short milk = 200;
         float milk1Caloric = milkCaloric / 100.0f;
         int breakfastGram = (int) ((banana * bananaCaloric) + (egg * eggCaloric) + (iceCream * iceCreamCaloric) + (milk * milk1Caloric));
-        System.out.println("breakfastGram = " + breakfastGram +  " gram");
+        System.out.println("breakfastGram = " + breakfastGram + " gram");
         float breakfastKg = breakfastGram / 1000.0f;
-        System.out.println("breakfastKg = " + breakfastKg +  " kg");
+        System.out.println("breakfastKg = " + breakfastKg + " kg");
         //Задача 7
         short diet1 = 250;
         short diet2 = 500;
@@ -73,17 +73,17 @@ public class Main {
         short weightGram = (short) (weight * 1000);
         byte result1 = (byte) (weightGram / diet1);
         byte result2 = (byte) (weightGram / diet2);
-        System.out.println(result1 + " дней уйдет на похудение, если спортсмен будет терять каждый день по 250 грамм" );
-        System.out.println(result2 + " дней уйдет на похудение, если спортсмен будет терять каждый день по 500 грамм" );
-        byte average = (byte)((result1 + result2) / 2);
+        System.out.println(result1 + " дней уйдет на похудение, если спортсмен будет терять каждый день по 250 грамм");
+        System.out.println(result2 + " дней уйдет на похудение, если спортсмен будет терять каждый день по 500 грамм");
+        byte average = (byte) ((result1 + result2) / 2);
         System.out.println(average + " может потребоваться дней в среднем, чтобы добиться результата похудения");
         //Задача 8
         int worker1 = 67760;
         int worker2 = 83690;
         int worker3 = 76230;
-        int  worker1up = (int)(worker1 * 1.1);
-        int  worker2up = (int)(worker2 * 1.1);
-        int  worker3up = (int)(worker3 * 1.1);
+        int worker1up = (int) (worker1 * 1.1);
+        int worker2up = (int) (worker2 * 1.1);
+        int worker3up = (int) (worker3 * 1.1);
         int worker1year = worker1 * 12;
         int worker2year = worker2 * 12;
         int worker3year = worker3 * 12;
@@ -96,4 +96,5 @@ public class Main {
         System.out.println("Маша теперь получает " + worker1up + " рублей. Годовой доход вырос на " + differenceWorker1 + " рублей");
         System.out.println("Денис теперь получает " + worker2up + " рублей. Годовой доход вырос на " + differenceWorker2 + " рублей");
         System.out.println("Кристина теперь получает " + worker3up + " рублей. Годовой доход вырос на " + differenceWorker3 + " рублей");
-    }}
+    }
+}
