@@ -7,7 +7,7 @@ public class Main {
         //Задача 1
         int[] inputArray1 = {10, 20, 30, 40, 50};
         float [] outputArray1 = new float [4];
-        int sum = 0;
+        float sum = 0;
         int max = 0;
         int min = inputArray1[0];
         float average = 0;
@@ -18,7 +18,7 @@ public class Main {
                 max = element;
             }
             outputArray1[1] = max;
-            if(min > element){
+            if (min > element){
                 min = element;
             }
             outputArray1[2] = min;
@@ -72,7 +72,7 @@ public class Main {
             if (element < 0) {
                 outputArray4[index2] = false;
                 break;
-            }else {
+            } else {
                 outputArray4[index2] = true;
             }
         }
@@ -85,14 +85,13 @@ public class Main {
         // Задача 5
         int[] inputArray5 = {2000, -4000, 4000, 3000, 5000};
         int [] outputArray5 = new int [1];
-        int index3 = 0;
         int month = 0;
         for (int element : inputArray5) {
-            if (element > 0){
+            if (element > 0) {
                 month += 1;
             }
-                outputArray5[index3] = month;
-            }
+        }
+        outputArray5[0] = month;
         for (int element : inputArray5) {
             System.out.println(element);
         }
